@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 5.3 - Tata Letak Kolom Tidak Rata</title>
+    
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+       
+        .container {
+            width: 800px; 
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+        
+            overflow: hidden; 
+        }
+
+        
+        .box {
+            padding: 10px;
+            margin: 5px; 
+            box-sizing: border-box; 
+            float: left; 
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+        }
+
+        
+        .top-yellow-box {
+            background-color: yellow;
+            width: 30%;
+            height: 80px;
+        }
+
+        .top-orange-box {
+            background-color: orangered;
+            width: 65%; 
+            height: 80px;
+        }
+
+       
+        .clearfix-1::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        
+       
+        .left-green-box {
+            background-color: lightgreen;
+            width: 30%;
+            height: 300px;
+            
+        }
+
+       
+        .center-container {
+            width: 65%;
+            float: left;
+        }
+
+        
+        .center-grey-box {
+            background-color: rgb(113, 111, 111);
+            width: 70%; 
+            height: 300px;
+            float: left;
+            margin: 5px;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        
+        .right-blue-box {
+            background-color: deepskyblue;
+            width: 28%; 
+            height: 300px;
+            float: right; 
+            margin: 5px;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        
+        .clearfix-2::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+       
+        .footer-blue-box {
+            background-color: royalblue;
+            width: 98%; 
+            height: 50px;
+            float: none; 
+            margin: 5px auto;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box top-yellow-box">Kotak Kuning</div>
+        <div class="box top-orange-box">Kotak Oranye</div>
+        <div class="clearfix-1"></div>
+
+        <div class="box left-green-box">Kolom Kiri (Hijau)</div>
+
+        <div class="center-container">
+             <div class="center-grey-box">Kolom Tengah (Abu-abu)</div>
+             <div class="right-blue-box">Kolom Kanan (Biru Muda)</div>
+        </div>
+        
+        <div class="clearfix-2"></div>
+
+        <div class="box footer-blue-box">Kotak Footer (Biru Tua)</div>
+    </div>
+
+</body>
+</html>
