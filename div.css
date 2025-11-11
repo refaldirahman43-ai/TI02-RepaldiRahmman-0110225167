@@ -1,0 +1,61 @@
+/* Container utama untuk menampung semua kotak */
+.container {
+    width: 800px; 
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Penting untuk membersihkan float */
+}
+
+/* Style dasar untuk semua kotak */
+.box {
+    padding: 10px;
+    margin: 5px; 
+    box-sizing: border-box; 
+    float: left; /* Membuat kotak-kotak bersebelahan */
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.header-box {
+    background-color: lightgreen;
+    width: 98%; 
+    height: 100px;
+    float: none; 
+    margin: 5px auto;
+}
+
+
+.left-yellow-box-1 {
+    background-color: yellow;
+    width: 30%;
+    height: 150px;
+}
+
+.right-orange-box {
+    background-color: orangered;
+    width: 65%; 
+    height: 150px;
+}
+
+.left-yellow-box-2 {
+    background-color: yellow;
+    width: 30%;
+    height: 100px;
+}
+
+.bottom-blue-box {
+    background-color: deepskyblue;
+    width: 65%;
+    height: 100px;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
